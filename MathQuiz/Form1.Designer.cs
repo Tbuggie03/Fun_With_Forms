@@ -61,6 +61,7 @@
             // 
             // timeLabel
             // 
+            this.timeLabel.BackColor = System.Drawing.SystemColors.Control;
             this.timeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeLabel.Location = new System.Drawing.Point(272, 9);
@@ -126,6 +127,8 @@
             this.Sum.Name = "Sum";
             this.Sum.Size = new System.Drawing.Size(100, 35);
             this.Sum.TabIndex = 1;
+            this.Sum.Click += new System.EventHandler(this.answer_Enter);
+            this.Sum.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // Difference
             // 
@@ -135,6 +138,8 @@
             this.Difference.Name = "Difference";
             this.Difference.Size = new System.Drawing.Size(100, 35);
             this.Difference.TabIndex = 2;
+            this.Difference.Click += new System.EventHandler(this.answer_Enter);
+            this.Difference.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // minusRightLabel
             // 
@@ -184,6 +189,8 @@
             this.Product.Name = "Product";
             this.Product.Size = new System.Drawing.Size(100, 35);
             this.Product.TabIndex = 3;
+            this.Product.Click += new System.EventHandler(this.answer_Enter);
+            this.Product.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // timesRightLabel
             // 
@@ -233,6 +240,8 @@
             this.Quotient.Name = "Quotient";
             this.Quotient.Size = new System.Drawing.Size(100, 35);
             this.Quotient.TabIndex = 4;
+            this.Quotient.Click += new System.EventHandler(this.answer_Enter);
+            this.Quotient.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // dividedRightLabel
             // 
